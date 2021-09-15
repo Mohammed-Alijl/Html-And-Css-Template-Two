@@ -615,15 +615,22 @@ header .container nav .search i{
 .our-skills{
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  max-width: 100%;
 }
 .our-skills .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-gap: 50px;
 }
+@media (max-width:767px){
+  .our-skills .container{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 .our-skills .container .text1{
   text-align: center;
   margin-bottom: 60px;
+  max-width: 100%;
 }
 .our-skills .container .text1 h3{
   font-weight: normal;
@@ -633,7 +640,8 @@ header .container nav .search i{
 .our-skills .container .text1 p{
     color: #777;
     line-height: 2;
-    text-align: center;  
+    text-align: center;
+    max-width: 100%;  
 }
 .our-skills .container .col-one .box{
   display: flex;
